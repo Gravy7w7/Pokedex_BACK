@@ -6,8 +6,7 @@ Aplicación BackEnd para gestionar y proporcionar datos a la Pokédex.
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Instalación y Configuración](#instalación-y-configuración)
-- [Uso](#uso)
-- [Contribuciones](#contribuciones)
+- [Despliegue](#Despliegue)
 
 ## Sobre el Proyecto
 
@@ -76,9 +75,13 @@ pokedex_back/
    ```
    Esto iniciará el servidor en `http://localhost:5000` por defecto.
 
-## Uso
+## Despliegue
 
-- Asegúrate de que el servidor esté funcionando antes de realizar solicitudes desde el FrontEnd o herramientas como Postman.
+El proyecto se encuentra en línea, puede acceder a él a partir del siguiente enlance.
+[Pokedex](http://pokedex.zapto.org/)
+
+El enlace debe ser exclusivamente http debido a que no tiene el certificado de SSL
+
 - Puedes modificar el puerto o configuraciones en el archivo `app.js` si es necesario.
 
 
