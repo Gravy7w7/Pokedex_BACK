@@ -1,8 +1,14 @@
-const getPaginedPokemons = ( async (limit, page) =>{
+const getPaginedPokemons = ( async (limit, page, keyword) =>{
     const startIndex = (page - 1) * limit;
     const endIndex = page * limit;
 
-    const paginedPokemons = global.dataPokemons.slice(startIndex, endIndex);
+    const filterPokemons = global.dataPokemons.filter(
+        (item)=>{
+            return item.name.toLowerCase().includes(keyword.toLowerCase())
+        }
+    )
+
+    const paginedPokemons = filterPokemons.slice(startIndex, endIndex);
 
         const pokemonsInfo = await Promise.all( paginedPokemons.map( async (pokemon) => {
             const response = await fetch(pokemon.url);
@@ -30,10 +36,10 @@ const getPaginedPokemons = ( async (limit, page) =>{
         }))
 
     return{
-        total: dataPokemons.length,
+        total: filterPokemons.length,
         page,
         limit,
-        totalPages: Math.ceil(global.dataPokemons.length / limit),
+        totalPages: Math.ceil(filterPokemons.length / limit),
         pokemons: pokemonsInfo
     };
 
