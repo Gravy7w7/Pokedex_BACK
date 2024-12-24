@@ -10,7 +10,7 @@ Aplicación BackEnd para gestionar y proporcionar datos a la Pokédex.
 
 ## Sobre el Proyecto
 
-Este BackEnd sirve como proveedor de datos para la Pokédex, ofreciendo una API RESTful que permite consultar información detallada sobre diferentes Pokémon. Maneja la conexión a una base de datos, así como la lógica de negocio necesaria para responder a las solicitudes realizadas por el FrontEnd.
+Este BackEnd sirve como proveedor de datos para la Pokédex, permite consultar información detallada sobre diferentes Pokémon. Maneja la conexión a una base de datos, así como la lógica de negocio necesaria para responder a las solicitudes realizadas por el FrontEnd.
 
 ## Tecnologías Utilizadas
 
