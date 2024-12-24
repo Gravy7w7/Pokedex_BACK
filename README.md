@@ -82,7 +82,5 @@ El proyecto se encuentra en línea, puede acceder a él a partir del siguiente e
 
 El enlace debe ser exclusivamente http debido a que no tiene el certificado de SSL
 
-- Puedes modificar el puerto o configuraciones en el archivo `app.js` si es necesario.
-
 
 
